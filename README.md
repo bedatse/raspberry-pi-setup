@@ -9,7 +9,7 @@ Visit https://www.raspberrypi.org/downloads/raspbian/ for raspbian lite image
 sudo raspi-config
 ```
 1. Change hostname
-2. Change keyboard layout
+2. Change locale, keyboard layout, timezone, wifi country
 3. Expand partition - Advanced Options -> Expand Filesystem
 4. Reboot
 
@@ -19,3 +19,7 @@ wpa_passphrase "$SSID" "$WIFI_PASSWORD" | sudo tee -a /etc/wpa_supplicant/wpa_su
 sudo wpa_cli reconfigure
 ```
 
+### Step 3 - Update Raspbian
+```
+curl httsp://bedatse.github.io/raspberry-pi-setup/setup.sh | bash -
+```
