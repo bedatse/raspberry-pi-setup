@@ -19,7 +19,8 @@ wpa_passphrase "$SSID" "$WIFI_PASSWORD" | sudo tee -a /etc/wpa_supplicant/wpa_su
 sudo wpa_cli reconfigure
 ```
 
-### Step 3 - Update Raspbian
+### Step 3 - Update Raspbian and install PIXEL
 ```
-curl httsp://bedatse.github.io/raspberry-pi-setup/setup.sh | bash -
+curl https://bedatse.github.io/raspberry-pi-setup/setup.sh | sudo bash -
 ```
+
