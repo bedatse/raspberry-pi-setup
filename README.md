@@ -21,6 +21,5 @@ sudo wpa_cli reconfigure
 
 ### Step 3 - Update Raspbian and install PIXEL
 ```
-curl https://bedatse.github.io/raspberry-pi-setup/setup.sh | sudo bash -
+curl -sL https://bedatse.github.io/raspberry-pi-setup/setup.sh | sudo bash -
 ```
-
